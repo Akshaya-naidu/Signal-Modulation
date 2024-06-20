@@ -1,4 +1,4 @@
-This dataset contains simulated data representing various signal modulations, along with their associated SNR (Signal-to-Noise Ratio) and frequency values. The dataset is designed to facilitate the classification or prediction of modulation types based on given SNR and frequency inputs.
+This dataset contains simulated data representing various signal modulations, along with observed SNR (Signal-to-Noise Ratio) and frequency values using spectral analyser . The dataset is designed to facilitate the classification or prediction of modulation types based on given SNR and frequency inputs.
 
 **Contents**
 
@@ -21,17 +21,20 @@ Support research and development in telecommunications, signal processing, and w
 
 **Dataset Generation Technique**
 
-Technique for SNR and Frequency Simulation
-The SNR and frequency values for each modulation type were simulated using the following technique:
+**Frequency Spectrum Analysis:**
+Description: Use spectrum analyzers or software-defined radios (SDRs) to analyze the frequency spectrum.
+Procedure:
+Scan the frequency range of interest using the spectrum analyzer or SDR.
+Identify signal peaks or frequency bands where modulation signals are present.
+Record the center frequency or frequency range where signals are detected.
 
-**SNR Simulation:**
-SNR values were chosen based on typical operating conditions for each modulation type.
-Higher SNR values were assigned to modulations that can handle more noise without significant degradation (e.g., higher-order QAM).
-Lower SNR values were assigned to modulations that require clearer signal conditions (e.g., simpler modulations like BPSK or QPSK).
-**Frequency Simulation:**
-Frequency values were assigned to reflect the range of carrier frequencies used in practical communication systems.
-Different frequency values allow for exploring how modulation performance varies across different parts of the spectrum.
-Frequencies were chosen to cover a wide range, from low frequencies (e.g., 1 GHz) to higher frequencies (e.g., 80 GHz), depending on the modulation's bandwidth requirements and application scenarios.
+**Measurement with Spectrum Analyzer:**
+Description: Use a spectrum analyzer to directly measure the signal and noise levels in the frequency band of interest.
+Procedure:
+Connect the spectrum analyzer to the antenna or RF source.
+Tune the analyzer to the desired frequency band.
+Read and record the signal power and noise floor levels.
+
 
 **Usage**
 
